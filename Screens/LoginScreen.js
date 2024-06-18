@@ -11,7 +11,7 @@ const LoginScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.logo}>Jobizz</Text>
+      <Text style={styles.logo}>Derrick </Text>
       <Text style={styles.welcome}>Welcome Back 👋</Text>
       <Text style={styles.subtitle}>Let's log in. Apply to jobs!</Text>
       <TextInput 
@@ -30,6 +30,16 @@ const LoginScreen = ({ navigation }) => {
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Log in</Text>
       </TouchableOpacity>
+
+    {/**the following code deals with the alignment of the continue button */}
+
+      <View style={styles.inline}>
+        <View style={styles.space1}></View>
+        <Text style={styles.option}>Or continue with</Text>
+        <View style= {styles.space2}></View>
+      </View>
+    {/*the end of the "continue with code" */}
+
       <View style={styles.socialLogin}>
         <TouchableOpacity>
           <Image source={require('../assets/images/iphone.png')} style={styles.socialIcon} />
@@ -42,7 +52,7 @@ const LoginScreen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <TouchableOpacity>
-        <Text style={styles.registerText}>Haven’t an account? Register</Text>
+        <Text style={styles.registerText}>Haven’t an account? <Text style={styles.register}>Register</Text></Text>
       </TouchableOpacity>
     </View>
   );
@@ -53,25 +63,30 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F7F8FA',
+    backgroundColor: '#FAFAFD',
     padding: 20,
+    paddingTop:20,
   },
   logo: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#3A3D46',
+    color: '#356899',
     marginBottom: 10,
+    marginRight: 230,
   },
   welcome: {
     fontSize: 24,
     fontWeight: 'bold',
     color: '#3A3D46',
+    marginRight: 120,
   },
   subtitle: {
     fontSize: 16,
     color: '#A1A5B2',
     marginTop: 10,
+    paddingBottom: 30,
     marginBottom: 30,
+    marginRight:130,
   },
   input: {
     height: 50,
@@ -84,7 +99,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
   },
   button: {
-    backgroundColor: '#3A3D46',
+    backgroundColor: '#356899',
     paddingVertical: 15,
     borderRadius: 5,
     alignItems: 'center',
@@ -101,14 +116,43 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   socialIcon: {
-    width: 40,
-    height: 40,
-    marginHorizontal: 10,
+    width: 100,
+    height: 100,
+    marginHorizontal: 1,
   },
   registerText: {
     fontSize: 14,
     color: '#A1A5B2',
   },
+
+  inline:{
+    flexDirection: "row",
+    alignItems: "center",
+  },
+
+  option:{
+    color: "gray",
+   marginButton: 50,
+   padding: 20,
+   
+  },
+
+  space1:{
+    borderWidth:0.1,
+    width:100,
+    borderColor:"#D1D5DB",
+  },
+  space2:{
+    borderWidth:0.1,
+    width: 100,
+    borderColor:"#D1D5DB",
+  },
+
+  register:{
+    fontSize: "14",
+    color: "#356899",
+  }
+ 
 });
 
 export default LoginScreen;
