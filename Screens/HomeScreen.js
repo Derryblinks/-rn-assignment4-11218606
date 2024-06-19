@@ -167,22 +167,22 @@
 
 import React from 'react';
 import { Image, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import JobCard from '../components/JobCard';
 import JobCardVertical from '../components/JobCardVertical';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const HomeScreen = ({ route }) => {
   const { name, email } = route.params;
 
   const featuredJobs = [
-    { id: 1, title: 'Software Engineer', company: 'Facebook', salary: '$180,000', location: 'Accra, Ghana', logo: require('../assets/images/facebook.png'), color: '#E8F0FE' },
-    { id: 2, title: 'Product Manager', company: 'Google', salary: '$160,000', location: 'Accra, Ghana', logo: require('../assets/images/google.png'), color: '#FCE8E6' },
-    { id: 3, title: 'Data Scientist', company: 'Microsoft', salary: '$150,000', location: 'Accra, Ghana', logo: require('../assets/images/iphone.png'), color: '#EBF3E7' },
-    { id: 4, title: 'UX Designer', company: 'Apple', salary: '$140,000', location: 'Accra, Ghana', logo: require('../assets/images/iphone.png'), color: '#F4E7E8' },
-    { id: 1, title: 'Software Engineer', company: 'Facebook', salary: '$180,000', location: 'Accra, Ghana', logo: require('../assets/images/facebook.png'), color: '#E8F0FE' },
-    { id: 2, title: 'Product Manager', company: 'Google', salary: '$160,000', location: 'Accra, Ghana', logo: require('../assets/images/google.png'), color: '#FCE8E6' },
-    { id: 3, title: 'Data Scientist', company: 'Microsoft', salary: '$150,000', location: 'Accra, Ghana', logo: require('../assets/images/iphone.png'), color: '#EBF3E7' },
-    { id: 4, title: 'UX Designer', company: 'Apple', salary: '$140,000', location: 'Accra, Ghana', logo: require('../assets/images/iphone.png'), color: '#F4E7E8' },
+    { id: 1, title: 'Software Engineer', company: 'Facebook', salary: '$180,000', location: 'Accra, Ghana', logo: require('../assets/images/facebook.png'), color: '#5486E5' },
+    { id: 2, title: 'Product Manager', company: 'Google', salary: '$160,000', location: 'Accra, Ghana', logo: require('../assets/images/google.png'), color: '#04284A' },
+    { id: 3, title: 'Data Scientist', company: 'Microsoft', salary: '$150,000', location: 'Accra, Ghana', logo: require('../assets/images/iphone.png'), color: '#C6E3B7' },
+    { id: 4, title: 'UX Designer', company: 'Apple', salary: '$140,000', location: 'Accra, Ghana', logo: require('../assets/images/iphone.png'), color: '#FAD4D7' },
+    { id: 1, title: 'Software Engineer', company: 'Facebook', salary: '$180,000', location: 'Accra, Ghana', logo: require('../assets/images/facebook.png'), color: '#ADC9FA' },
+    { id: 2, title: 'Product Manager', company: 'Google', salary: '$160,000', location: 'Accra, Ghana', logo: require('../assets/images/google.png'), color: '#FAD6D2' },
+    { id: 3, title: 'Data Scientist', company: 'Microsoft', salary: '$150,000', location: 'Accra, Ghana', logo: require('../assets/images/iphone.png'), color: '#BDD6B0' },
+    { id: 4, title: 'UX Designer', company: 'Apple', salary: '$140,000', location: 'Accra, Ghana', logo: require('../assets/images/iphone.png'), color: '#3C0681' },
   ];
 
   const popularJobs = [
