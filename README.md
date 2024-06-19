@@ -14,6 +14,12 @@ The screen is divided into two sections: "Popular" and "Featured" job cards.
 A functional component that accepts props for the card details.
 This component displays at least 8 different job cards in each section.
 
+## Job Card 
+ This component receives an array of job objects and maps over them to render JobCard components for each job.
+
+ ## Job Card Vertical
+  This functional component is used to display individual job details in a vertical layout.
+
 # Screenshots of Project
 ![full page](Screenshots/Fullpage.jpg)
 ![Login Screen](<Screenshots/iPhone-13-PRO-localhost (3).png>)
