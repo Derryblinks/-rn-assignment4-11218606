@@ -5,6 +5,7 @@ import { Image, StyleSheet, Text, View } from 'react-native'
 const JobCard = ({ job }) => {
     return (
         <View style={[styles.card, { backgroundColor: job.color }]}>
+          <Image source={require("../assets/images/Group.png")} style={styles.overlay} />
           <View style={styles.first}>
             <Image source={job.logo} style={styles.logo} />
             <View style={styles.third}>
@@ -81,6 +82,12 @@ const styles = StyleSheet.create({
       paddingLeft: 80,
       fontFamily: "Poppins", 
       marginRight: 10,
+    },
+
+    overlay:{
+      position: "absolute",
+      opacity: 0.3,
+
     },
 })
 
