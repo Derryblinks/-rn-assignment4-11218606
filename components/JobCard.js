@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
 
     overlay:{
       position: "absolute",
-      opacity: 0.3,
+      opacity: 0.1,
 
     },
 })
