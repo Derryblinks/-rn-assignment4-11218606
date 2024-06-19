@@ -215,6 +215,7 @@ const HomeScreen = ({ route }) => {
         <TextInput
           style={styles.searchInput}
           placeholder="Search a job or position"
+          placeholderTextColor= "gray"
         />
         <TouchableOpacity>
         <Image source={require('../assets/images/sort.png')} style={styles.filterIcon} />

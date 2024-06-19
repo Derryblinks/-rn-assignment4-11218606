@@ -17,12 +17,16 @@ const LoginScreen = ({ navigation }) => {
       <TextInput 
         style={styles.input}
         placeholder="Name"
+        placeholderTextColor ="gray"
+        placeholderFontFamily = "Poppins"
         value={name}
         onChangeText={setName}
       />
       <TextInput 
         style={styles.input}
         placeholder="Email"
+        placeholderTextColor = "gray"
+        placeholderFontFamily = "Poppins"
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
