@@ -17,12 +17,12 @@ This component displays at least 8 different job cards in each section.
 # Screenshots of Project
 ![full page](Screenshots/Fullpage.jpg)
 ![Login Screen](<Screenshots/iPhone-13-PRO-localhost (3).png>)
+![Login Screen ](<Screen 9.png>)
 ![Login Screen](Screenshots/iPhone-13-PRO-localhost.png)
 ![Home Screen](<Screenshots/Screen 4.png>)
 ![Home Screen](<Screenshots/Screen 5.png>)
 ![Home Screen](<Screenshots/Screen 6.png>)
 ![Login Screen](Screenshots/Screen3.png)
-![Login Screen ](<Screen 9.png>)
 
 
 ## Conclusion
